@@ -1,0 +1,14 @@
+<form [formGroup]="myFormObj"  (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="boxOne">Box 1</label>
+        <input type="number" class="form-control" id="boxOne" name="boxone" formControlName="onedata">
+    </div>
+    <div class="form-group">
+        <label for="boxTwo">Box 2</label>
+        <input type="number" class="form-control" id="boxTwo" name="boxtwo" formControlName="twodata">
+    </div>
+    <button class="btn btn-primary text-white" type="submit" >create chart</button>
+<div style ="display:block; position: absolute;">
+    <canvas id="myChart"></canvas>
+</div>
+</form>
